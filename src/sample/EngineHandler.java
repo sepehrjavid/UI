@@ -1,5 +1,15 @@
 package sample;
 
+import javafx.event.EventHandler;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
+
 import java.util.List;
 
 public class EngineHandler {
@@ -7,11 +17,11 @@ public class EngineHandler {
     private MySocket socket;
     private List<PlayerUI> players;
 
-    public EngineHandler(List<PlayerUI> players, BoardUI board) {
-        socket = new MySocket();
-        this.players = players;
-        this.board = board;
-    }
+//    public EngineHandler(List<PlayerUI> players, BoardUI board) {
+//        socket = new MySocket();
+//        this.players = players;
+//        this.board = board;
+//    }
 
 
     public void handle(String message) {
@@ -28,7 +38,7 @@ public class EngineHandler {
             }
         }
         else if(operation.equals("invalidmove")){
-
+            ShowMessage("Oppss...Invalid move!!");
         }
         else if (operation.equals("nobeadinselectedarea")){
 
@@ -87,6 +97,29 @@ public class EngineHandler {
             }
         }
 
+    }
+
+
+    private void ShowMessage(String message){
+        Label text = new Label();
+        text.setText(message);
+        Button button = new Button("Ok!");
+        Stage temp = new Stage();
+        button.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                temp.close();
+            }
+        });
+        button.setCenterShape(true);
+        BorderPane box = new BorderPane();
+        VBox box2 = new VBox();
+        box.setBottom(button);
+        box.setTop(text);
+        box2.getChildren().add(box);
+        Scene inside = new Scene(box2, 200, 100);
+        temp.setScene(inside);
+        temp.show();
     }
 
 }

@@ -18,7 +18,8 @@ public class Main extends Application {
     Scene scene1,scene2,scene3;
     @Override
     public void start(Stage primaryStage) throws Exception {
-
+        EngineHandler a = new EngineHandler();
+        a.handle("invalidmove");
         BoardUi board = new BoardUi();
         VBox wrap = new VBox(10);
         wrap.getChildren().add(board);
@@ -70,8 +71,7 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
-        EngineHandler a = new EngineHandler();
-        a.handle("update 2 is ia insa i iABS");
+
         launch(args);
     }
 }
