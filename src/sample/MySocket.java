@@ -13,7 +13,7 @@ public class MySocket {
     private InputStream InFromServer;
     private DataInputStream in;
 
-    public Socket sock_init() {
+    public MySocket() {
         String serverName = "127.0.0.1";
         int port = 54000;
         try {
@@ -30,12 +30,10 @@ public class MySocket {
 
             in = new DataInputStream(InFromServer);
 
-            return door;
 
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return null;
     }
 
 
@@ -51,7 +49,6 @@ public class MySocket {
 
     public String recv() {
         try {
-            out.flush();
             byte[] arr = new byte[50];
 
             int a = in.read(arr);

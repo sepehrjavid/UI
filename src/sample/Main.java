@@ -70,6 +70,8 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
+        EngineHandler a = new EngineHandler();
+        a.handle("update 2 is ia insa i iABS");
         launch(args);
     }
 }
