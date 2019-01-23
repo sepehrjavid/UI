@@ -3,7 +3,6 @@ import javafx.geometry.Pos;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.control.TableRow;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
@@ -19,7 +18,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         EngineHandler a = new EngineHandler();
-        a.handle("invalidmove");
+        a.MessageHandle("winner sepehr");
         BoardUi board = new BoardUi();
         VBox wrap = new VBox(10);
         wrap.getChildren().add(board);
