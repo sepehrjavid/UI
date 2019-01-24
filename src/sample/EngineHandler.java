@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -20,17 +21,20 @@ enum COLOR {
     GREEN,
     BLUE,
     BLACK,
-    YELLOW
+    YELLOW,
+    NONE
 }
 
 
-public class EngineHandler {
+public class EngineHandler implements EventHandler<ActionEvent>{
     private BoardUI board;
-    private MySocket socket;
+    private MySocket socket = null;
     private List<PlayerUI> players;
 
 //    public EngineHandler(List<PlayerUI> players, BoardUI board) {
-//        socket = new MySocket();
+//        if (socket == null) {
+//            socket = new MySocket();
+//        }
 //        this.players = players;
 //        this.board = board;
 //    }
@@ -88,6 +92,7 @@ public class EngineHandler {
             temp = socket.recv();
             MessageHandle(temp);
         } else if (operation.equals("ok")) {
+
         }
     }
 
@@ -141,6 +146,30 @@ public class EngineHandler {
         temp.show();
     }
 
+    public void sendEnginePlayerData() {
+        String out = "";
+        out += players.size();
+        for (int i = 0; i < players.size(); i++) {
+            PlayerUI instance = players.get(i);
+            out = out + " " + instance.name;
+            if (instance.ident.equals("")){
+                out = out + " None";
+            }
+            else {
+                out = out + " " + instance.ident;
+            }
+            out = out + " " + instance.color;
+        }
+
+        socket.send(out);
+        String temp = socket.recv();
+        MessageHandle(temp);
+    }
+
+    @Override
+    public void handle(ActionEvent event) {
+        
+    }
 }
 
 
@@ -165,6 +194,9 @@ interface PeaceUI {
 interface PlayerUI {
     String name = "";
     String ident = "";
+    COLOR color = COLOR.NONE;
 
     void MakeActive();
 }
+
+
