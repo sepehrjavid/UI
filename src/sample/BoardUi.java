@@ -19,7 +19,7 @@ public class BoardUi extends GridPane implements BoardUI {
     //int length,width;
     Stage primaryStage;
     Scene first_scene;
-    private static Button buttons[][] = new Button[6][6]; //create 9 buttons
+    private static Button[][] buttons = new Button[6][6]; //create 9 buttons
 
     public BoardUi(Stage primaryStage, Scene first_Scene) {
         this.primaryStage = primaryStage;
@@ -60,6 +60,13 @@ public class BoardUi extends GridPane implements BoardUI {
             }
         }
     }
+
+
+    @Override
+    public Button[][] getButtons() {
+        return buttons;
+    }
+
 
     @Override
     public void AddPeace(int x, int y, String color) {

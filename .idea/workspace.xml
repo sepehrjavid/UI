@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UI/sample/COLOR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UI/sample/COLOR.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UI/sample/EngineHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UI/sample/EngineHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UI/sample/PlayerUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UI/sample/PlayerUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/UI/sample/BoardUi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UI/sample/BoardUi.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/BoardUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/BoardUi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/EngineHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/EngineHandler.java" afterDir="false" />
     </list>
@@ -76,12 +74,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/EngineHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="170" column="8" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
+            <state relative-caret-position="386">
+              <caret line="181" column="26" selection-start-line="181" selection-start-column="26" selection-end-line="181" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5475#5476#0" expanded="true" />
-                <element signature="e#5494#5495#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,10 +86,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/BoardUi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1253">
-              <caret line="100" column="74" lean-forward="true" selection-start-line="100" selection-start-column="74" selection-end-line="100" selection-end-column="74" />
+            <state relative-caret-position="80">
+              <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4415#4416#0" expanded="true" />
+                <element signature="e#4453#4454#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -178,7 +176,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548317752457" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548320216876" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -297,18 +295,18 @@
       <workItem from="1548252571657" duration="14000" />
       <workItem from="1548252699178" duration="7205000" />
       <workItem from="1548263022714" duration="7295000" />
-      <workItem from="1548313628728" duration="3798000" />
+      <workItem from="1548313628728" duration="5448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37183000" />
+    <option name="totallyTimeSpent" value="38833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.07401491" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.07401491" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -317,7 +315,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32719395" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32719395" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.26002166" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -412,22 +410,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/BoardUi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1253">
-          <caret line="100" column="74" lean-forward="true" selection-start-line="100" selection-start-column="74" selection-end-line="100" selection-end-column="74" />
+        <state relative-caret-position="80">
+          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4415#4416#0" expanded="true" />
+            <element signature="e#4453#4454#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/EngineHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="170" column="8" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
+        <state relative-caret-position="386">
+          <caret line="181" column="26" selection-start-line="181" selection-start-column="26" selection-end-line="181" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5475#5476#0" expanded="true" />
-            <element signature="e#5494#5495#0" expanded="true" />
           </folding>
         </state>
       </provider>

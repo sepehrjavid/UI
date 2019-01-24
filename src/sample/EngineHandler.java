@@ -168,7 +168,18 @@ public class EngineHandler implements EventHandler<ActionEvent>{
 
     @Override
     public void handle(ActionEvent event) {
-        
+        String out = "";
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++){
+                if (board.getButtons()[i][j].equals(event.getSource())){
+                    out = i + " " + j;
+                    break;
+                }
+            }
+        }
+        socket.send(out);
+        String temp = socket.recv();
+        MessageHandle(temp);
     }
 }
 
@@ -183,6 +194,9 @@ interface BoardUI {
     void ChanegPeaceColor(int x, int y, String color);
 
     void EndGame();
+
+    Button[][] getButtons();
+
 }
 
 
